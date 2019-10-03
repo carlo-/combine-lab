@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import Combine
+import CombineLabAPI
 
 class FirstViewController: UIViewController {
+    
+    private var cancellables: Set<AnyCancellable> = .init()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        CombineLabAPI.userPublisher()
+            .sink(receiveCompletion: {
+                print("Received completion: \($0)")
+            }, receiveValue: {
+                print("Received user: \($0)")
+            })
+            .store(in: &cancellables)
     }
-
-
 }
-

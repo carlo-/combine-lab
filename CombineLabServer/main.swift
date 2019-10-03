@@ -7,12 +7,17 @@
 //
 
 import Vapor
+import CombineLabModelMac
 
 let app = try Application()
 let router = try app.make(Router.self)
 
 router.get("hello") { req in
     return "Hello, world."
+}
+
+router.get("user") { req in
+    return User(name: "Mario", identifier: "Rossi")
 }
 
 try app.run()

@@ -14,11 +14,68 @@
 		235D09A2234665C6008FCF40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235D09A0234665C6008FCF40 /* Main.storyboard */; };
 		235D09A4234665C7008FCF40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235D09A3234665C7008FCF40 /* Assets.xcassets */; };
 		235D09A7234665C7008FCF40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235D09A5234665C7008FCF40 /* LaunchScreen.storyboard */; };
+		235E12352346882F00924618 /* CombineLabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E12342346882F00924618 /* CombineLabModel.swift */; };
+		235E12462346889700924618 /* CombineLabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E12342346882F00924618 /* CombineLabModel.swift */; };
+		235E12472346890400924618 /* libCombineLabModelMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 235E123D2346886F00924618 /* libCombineLabModelMac.a */; };
+		235E124A2346890B00924618 /* libCombineLabModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 235E12322346882F00924618 /* libCombineLabModel.a */; };
+		235E124E23468AFD00924618 /* ModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E124D23468AFD00924618 /* ModelExtensions.swift */; };
+		235E125A23468C5300924618 /* libCombineLabAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 235E125323468BBF00924618 /* libCombineLabAPI.a */; };
+		235E125D23468CA000924618 /* CombineLabAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E125523468BC000924618 /* CombineLabAPI.swift */; };
+		235E126023468DD800924618 /* libCombineLabModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 235E12322346882F00924618 /* libCombineLabModel.a */; };
 		23664874234660AF00ACD220 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23664873234660AF00ACD220 /* main.swift */; };
 		2366487C2346610500ACD220 /* Vapor in Frameworks */ = {isa = PBXBuildFile; productRef = 2366487B2346610500ACD220 /* Vapor */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		235E12482346890400924618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23664868234660AF00ACD220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 235E123C2346886F00924618;
+			remoteInfo = CombineLabModelMac;
+		};
+		235E124B2346890B00924618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23664868234660AF00ACD220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 235E12312346882F00924618;
+			remoteInfo = CombineLabModel;
+		};
+		235E125B23468C5300924618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23664868234660AF00ACD220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 235E125223468BBF00924618;
+			remoteInfo = CombineLabAPI;
+		};
+		235E125E23468DD200924618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23664868234660AF00ACD220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 235E12312346882F00924618;
+			remoteInfo = CombineLabModel;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		235E12302346882F00924618 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235E125123468BBF00924618 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2366486E234660AF00ACD220 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,6 +99,12 @@
 		235D09A6234665C7008FCF40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		235D09A8234665C7008FCF40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		235D09AC23467892008FCF40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		235E12322346882F00924618 /* libCombineLabModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCombineLabModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		235E12342346882F00924618 /* CombineLabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLabModel.swift; sourceTree = "<group>"; };
+		235E123D2346886F00924618 /* libCombineLabModelMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCombineLabModelMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		235E124D23468AFD00924618 /* ModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExtensions.swift; sourceTree = "<group>"; };
+		235E125323468BBF00924618 /* libCombineLabAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCombineLabAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		235E125523468BC000924618 /* CombineLabAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLabAPI.swift; sourceTree = "<group>"; };
 		23664870234660AF00ACD220 /* CombineLabServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CombineLabServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		23664873234660AF00ACD220 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +114,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235E125A23468C5300924618 /* libCombineLabAPI.a in Frameworks */,
+				235E124A2346890B00924618 /* libCombineLabModel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235E122F2346882F00924618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235E123B2346886F00924618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235E125023468BBF00924618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235E126023468DD800924618 /* libCombineLabModel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2366487C2346610500ACD220 /* Vapor in Frameworks */,
+				235E12472346890400924618 /* libCombineLabModelMac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,13 +168,39 @@
 			path = CombineLabClient;
 			sourceTree = "<group>";
 		};
+		235E1223234685B700924618 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		235E12332346882F00924618 /* CombineLabModel */ = {
+			isa = PBXGroup;
+			children = (
+				235E12342346882F00924618 /* CombineLabModel.swift */,
+			);
+			path = CombineLabModel;
+			sourceTree = "<group>";
+		};
+		235E125423468BC000924618 /* CombineLabAPI */ = {
+			isa = PBXGroup;
+			children = (
+				235E125523468BC000924618 /* CombineLabAPI.swift */,
+			);
+			path = CombineLabAPI;
+			sourceTree = "<group>";
+		};
 		23664867234660AF00ACD220 = {
 			isa = PBXGroup;
 			children = (
 				235D09AC23467892008FCF40 /* README.md */,
 				23664872234660AF00ACD220 /* CombineLabServer */,
 				235D0997234665C6008FCF40 /* CombineLabClient */,
+				235E12332346882F00924618 /* CombineLabModel */,
+				235E125423468BC000924618 /* CombineLabAPI */,
 				23664871234660AF00ACD220 /* Products */,
+				235E1223234685B700924618 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +209,9 @@
 			children = (
 				23664870234660AF00ACD220 /* CombineLabServer */,
 				235D0996234665C6008FCF40 /* CombineLabClient.app */,
+				235E12322346882F00924618 /* libCombineLabModel.a */,
+				235E123D2346886F00924618 /* libCombineLabModelMac.a */,
+				235E125323468BBF00924618 /* libCombineLabAPI.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,11 +221,22 @@
 			children = (
 				235D0991234664BE008FCF40 /* CombineLabServer.entitlements */,
 				23664873234660AF00ACD220 /* main.swift */,
+				235E124D23468AFD00924618 /* ModelExtensions.swift */,
 			);
 			path = CombineLabServer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		235E12392346886F00924618 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		235D0995234665C6008FCF40 /* CombineLabClient */ = {
@@ -122,11 +250,65 @@
 			buildRules = (
 			);
 			dependencies = (
+				235E124C2346890B00924618 /* PBXTargetDependency */,
+				235E125C23468C5300924618 /* PBXTargetDependency */,
 			);
 			name = CombineLabClient;
 			productName = CombineLabClient;
 			productReference = 235D0996234665C6008FCF40 /* CombineLabClient.app */;
 			productType = "com.apple.product-type.application";
+		};
+		235E12312346882F00924618 /* CombineLabModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235E12362346882F00924618 /* Build configuration list for PBXNativeTarget "CombineLabModel" */;
+			buildPhases = (
+				235E122E2346882F00924618 /* Sources */,
+				235E122F2346882F00924618 /* Frameworks */,
+				235E12302346882F00924618 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CombineLabModel;
+			productName = CombineLabModel;
+			productReference = 235E12322346882F00924618 /* libCombineLabModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		235E123C2346886F00924618 /* CombineLabModelMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235E12432346886F00924618 /* Build configuration list for PBXNativeTarget "CombineLabModelMac" */;
+			buildPhases = (
+				235E12392346886F00924618 /* Headers */,
+				235E123A2346886F00924618 /* Sources */,
+				235E123B2346886F00924618 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CombineLabModelMac;
+			productName = CombineLabModelMac;
+			productReference = 235E123D2346886F00924618 /* libCombineLabModelMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		235E125223468BBF00924618 /* CombineLabAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235E125723468BC000924618 /* Build configuration list for PBXNativeTarget "CombineLabAPI" */;
+			buildPhases = (
+				235E124F23468BBF00924618 /* Sources */,
+				235E125023468BBF00924618 /* Frameworks */,
+				235E125123468BBF00924618 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				235E125F23468DD200924618 /* PBXTargetDependency */,
+			);
+			name = CombineLabAPI;
+			productName = CombineLabAPI;
+			productReference = 235E125323468BBF00924618 /* libCombineLabAPI.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		2366486F234660AF00ACD220 /* CombineLabServer */ = {
 			isa = PBXNativeTarget;
@@ -139,6 +321,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				235E12492346890400924618 /* PBXTargetDependency */,
 			);
 			name = CombineLabServer;
 			packageProductDependencies = (
@@ -159,6 +342,15 @@
 				ORGANIZATIONNAME = "Carlo Rapisarda";
 				TargetAttributes = {
 					235D0995234665C6008FCF40 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					235E12312346882F00924618 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					235E123C2346886F00924618 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					235E125223468BBF00924618 = {
 						CreatedOnToolsVersion = 11.1;
 					};
 					2366486F234660AF00ACD220 = {
@@ -184,6 +376,9 @@
 			targets = (
 				2366486F234660AF00ACD220 /* CombineLabServer */,
 				235D0995234665C6008FCF40 /* CombineLabClient */,
+				235E12312346882F00924618 /* CombineLabModel */,
+				235E123C2346886F00924618 /* CombineLabModelMac */,
+				235E125223468BBF00924618 /* CombineLabAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -213,15 +408,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		235E122E2346882F00924618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235E12352346882F00924618 /* CombineLabModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235E123A2346886F00924618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235E12462346889700924618 /* CombineLabModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235E124F23468BBF00924618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235E125D23468CA000924618 /* CombineLabAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2366486C234660AF00ACD220 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				23664874234660AF00ACD220 /* main.swift in Sources */,
+				235E124E23468AFD00924618 /* ModelExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		235E12492346890400924618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 235E123C2346886F00924618 /* CombineLabModelMac */;
+			targetProxy = 235E12482346890400924618 /* PBXContainerItemProxy */;
+		};
+		235E124C2346890B00924618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 235E12312346882F00924618 /* CombineLabModel */;
+			targetProxy = 235E124B2346890B00924618 /* PBXContainerItemProxy */;
+		};
+		235E125C23468C5300924618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 235E125223468BBF00924618 /* CombineLabAPI */;
+			targetProxy = 235E125B23468C5300924618 /* PBXContainerItemProxy */;
+		};
+		235E125F23468DD200924618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 235E12312346882F00924618 /* CombineLabModel */;
+			targetProxy = 235E125E23468DD200924618 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		235D09A0234665C6008FCF40 /* Main.storyboard */ = {
@@ -278,6 +521,92 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.carlorapisarda.CombineLabClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		235E12372346882F00924618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57W7KG4A63;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		235E12382346882F00924618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57W7KG4A63;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		235E12442346886F00924618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57W7KG4A63;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		235E12452346886F00924618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57W7KG4A63;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		235E125823468BC000924618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57W7KG4A63;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		235E125923468BC000924618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57W7KG4A63;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -431,6 +760,33 @@
 			buildConfigurations = (
 				235D09AA234665C7008FCF40 /* Debug */,
 				235D09AB234665C7008FCF40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		235E12362346882F00924618 /* Build configuration list for PBXNativeTarget "CombineLabModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235E12372346882F00924618 /* Debug */,
+				235E12382346882F00924618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		235E12432346886F00924618 /* Build configuration list for PBXNativeTarget "CombineLabModelMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235E12442346886F00924618 /* Debug */,
+				235E12452346886F00924618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		235E125723468BC000924618 /* Build configuration list for PBXNativeTarget "CombineLabAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235E125823468BC000924618 /* Debug */,
+				235E125923468BC000924618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

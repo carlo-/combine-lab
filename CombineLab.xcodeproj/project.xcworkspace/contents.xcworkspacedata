@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Volumes/Macintosh HD/Users/carlo/Projects/CombineLab/CombineLab.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
