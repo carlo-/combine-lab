@@ -24,6 +24,7 @@
 		235E126023468DD800924618 /* libCombineLabModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 235E12322346882F00924618 /* libCombineLabModel.a */; };
 		23664874234660AF00ACD220 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23664873234660AF00ACD220 /* main.swift */; };
 		2366487C2346610500ACD220 /* Vapor in Frameworks */ = {isa = PBXBuildFile; productRef = 2366487B2346610500ACD220 /* Vapor */; };
+		23B0E5002347EADA00B7F606 /* Combine+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B0E4FF2347EADA00B7F606 /* Combine+UIControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		235E125523468BC000924618 /* CombineLabAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLabAPI.swift; sourceTree = "<group>"; };
 		23664870234660AF00ACD220 /* CombineLabServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CombineLabServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		23664873234660AF00ACD220 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		23B0E4FF2347EADA00B7F606 /* Combine+UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+UIControl.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,14 +158,10 @@
 		235D0997234665C6008FCF40 /* CombineLabClient */ = {
 			isa = PBXGroup;
 			children = (
-				235D0998234665C6008FCF40 /* AppDelegate.swift */,
-				235D099A234665C6008FCF40 /* SceneDelegate.swift */,
-				235D099C234665C6008FCF40 /* FirstViewController.swift */,
-				235D099E234665C6008FCF40 /* SecondViewController.swift */,
-				235D09A0234665C6008FCF40 /* Main.storyboard */,
-				235D09A3234665C7008FCF40 /* Assets.xcassets */,
-				235D09A5234665C7008FCF40 /* LaunchScreen.storyboard */,
-				235D09A8234665C7008FCF40 /* Info.plist */,
+				2363A34A2348901F005A6825 /* Application */,
+				2363A34B2348906D005A6825 /* Interface */,
+				2363A34823488FBD005A6825 /* Extensions */,
+				2363A34923488FFB005A6825 /* Resources */,
 			);
 			path = CombineLabClient;
 			sourceTree = "<group>";
@@ -191,14 +189,51 @@
 			path = CombineLabAPI;
 			sourceTree = "<group>";
 		};
+		2363A34823488FBD005A6825 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23B0E4FF2347EADA00B7F606 /* Combine+UIControl.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		2363A34923488FFB005A6825 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				235D09A3234665C7008FCF40 /* Assets.xcassets */,
+				235D09A5234665C7008FCF40 /* LaunchScreen.storyboard */,
+				235D09A8234665C7008FCF40 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2363A34A2348901F005A6825 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				235D0998234665C6008FCF40 /* AppDelegate.swift */,
+				235D099A234665C6008FCF40 /* SceneDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		2363A34B2348906D005A6825 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				235D099C234665C6008FCF40 /* FirstViewController.swift */,
+				235D099E234665C6008FCF40 /* SecondViewController.swift */,
+				235D09A0234665C6008FCF40 /* Main.storyboard */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
 		23664867234660AF00ACD220 = {
 			isa = PBXGroup;
 			children = (
 				235D09AC23467892008FCF40 /* README.md */,
-				23664872234660AF00ACD220 /* CombineLabServer */,
 				235D0997234665C6008FCF40 /* CombineLabClient */,
-				235E12332346882F00924618 /* CombineLabModel */,
 				235E125423468BC000924618 /* CombineLabAPI */,
+				235E12332346882F00924618 /* CombineLabModel */,
+				23664872234660AF00ACD220 /* CombineLabServer */,
 				23664871234660AF00ACD220 /* Products */,
 				235E1223234685B700924618 /* Frameworks */,
 			);
@@ -219,9 +254,9 @@
 		23664872234660AF00ACD220 /* CombineLabServer */ = {
 			isa = PBXGroup;
 			children = (
-				235D0991234664BE008FCF40 /* CombineLabServer.entitlements */,
 				23664873234660AF00ACD220 /* main.swift */,
 				235E124D23468AFD00924618 /* ModelExtensions.swift */,
+				235D0991234664BE008FCF40 /* CombineLabServer.entitlements */,
 			);
 			path = CombineLabServer;
 			sourceTree = "<group>";
@@ -402,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				235D099F234665C6008FCF40 /* SecondViewController.swift in Sources */,
+				23B0E5002347EADA00B7F606 /* Combine+UIControl.swift in Sources */,
 				235D099D234665C6008FCF40 /* FirstViewController.swift in Sources */,
 				235D0999234665C6008FCF40 /* AppDelegate.swift in Sources */,
 				235D099B234665C6008FCF40 /* SceneDelegate.swift in Sources */,

@@ -29,8 +29,6 @@ extension APIEndpoint {
 }
 
 public class CombineLabAPI {
-    
-    static let baseURL = "http://localhost:8080"
 
     private init() {}
     

@@ -9,20 +9,30 @@
 import UIKit
 import Combine
 import CombineLabAPI
+import CombineLabModel
 
 class FirstViewController: UIViewController {
+    
+    @IBOutlet private weak var fetchUserButton: UIButton!
+    @IBOutlet private weak var userLabel: UILabel!
     
     private var cancellables: Set<AnyCancellable> = .init()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CombineLabAPI.userPublisher()
-            .sink(receiveCompletion: {
-                print("Received completion: \($0)")
-            }, receiveValue: {
-                print("Received user: \($0)")
-            })
+        fetchUserButton.publisher(for: .touchUpInside)
+            .throttle(for: 1, scheduler: RunLoop.main, latest: false)
+            .flatMap { _ in
+                CombineLabAPI.userPublisher()
+                    .catch { error -> Empty<User, Never> in
+                        print("Received error: \(error)")
+                        return Empty()
+                    }
+            }
+            .map { String(describing: $0) }
+            .receive(on: DispatchQueue.main)
+            .assign(to: \UILabel.text, on: userLabel)
             .store(in: &cancellables)
     }
 }
